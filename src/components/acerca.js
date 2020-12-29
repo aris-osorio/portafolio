@@ -1,11 +1,13 @@
-export default function Acerca(){
-    return(
-        <div className ="vh-100">
-            <div className="vh-100 d-flex justify-content-center align-items-center">
-                <div>
-                    <h1>Acerca de</h1>
+export default function Acerca() {
+    return (
+        <section id = "acerca">
+            <div className="vh-100">
+                <div className="vh-100 d-flex justify-content-center align-items-center">
+                    <div>
+                        <h1>Acerca de</h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
