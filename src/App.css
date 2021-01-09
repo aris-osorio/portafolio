@@ -1,0 +1,136 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+/*helpers*/
+.cover
+{
+    background-size: cover;
+}
+.julius
+{
+    font-family: 'Julius Sans One', sans-serif; 
+}
+.yellow
+{
+    color: yellow!important;
+}
+.bg-black
+{
+    background-color:#000000;
+}
+
+/*App*/
+*
+{
+    font-family: 'Calibri', sans-serif;
+}
+
+/*NavBar*/
+.navbar
+{
+    color: white;
+}
+
+.nav-item > a 
+{
+    font-family: 'Julius Sans One', sans-serif; 
+    color: white!important;
+}
+
+.nav-item > a:hover
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item > .active 
+{
+    color:yellow!important;
+    border-bottom: 1px solid  yellow!important;
+}
+
+/*inicio*/
+.mandril
+{
+    background-image: url("./media/mandril.jpg");
+}
+.title
+{
+    font-size: 100px; 
+}
+.subtitle
+{
+    font-size: 32px; 
+}
+span
+{
+    font-family: 'Julius Sans One', sans-serif!important; 
+    color: yellow;
+}
+.cuadrito
+{
+    width: 10px;
+    height: 10px;
+    background: pink;
+}
+
+/*------------------------Responsive Design--------------------*/
+@media screen and (max-width: 576px)
+{   
+    .cuadrito
+    {
+        background: white;
+    }
+}
+@media screen and (min-width: 575px) and (max-width: 823px)
+{  
+    .cuadrito
+    {
+        background: red;
+    }
+    .title
+    {
+        font-size: 70px; 
+    }
+    .subtitle
+    {
+        font-size: 25px; 
+    }
+}
+@media screen and (min-width: 824px) and (max-width: 1077px) 
+{
+    .cuadrito
+    {
+        background: blue;
+    }
+    #NavContainer
+    {
+        flex: 0 0 70%!important;
+        max-width: 70%!important;
+    }
+    .mandril
+    {
+        background-image: url("./media/mandril2.jpg");
+    }
+    .title
+    {
+        font-size: 80px; 
+    }
+    .subtitle
+    {
+        font-size: 25px; 
+    }
+}
+@media screen and (min-width: 1078px) and (max-width: 1199.98px) 
+{ 
+    .cuadrito
+    {
+        background: green;
+    }
+    #NavContainer
+    {
+        flex: 0 0 60%!important;
+        max-width: 60%!important;
+    }
+}
