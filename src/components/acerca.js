@@ -8,7 +8,7 @@ export default function Acerca() {
     return (
         <section id="acerca">
             <div className="bg-black">
-                <div className="vh-100 p-5">
+                <div className="vh-100 pt-5 container">
                     <div className="col-12 d-flex justify-content-center p-3">
                         <h1>Acerca de</h1>
                     </div>
@@ -24,7 +24,7 @@ export default function Acerca() {
                                 con las cuales puedo transformar las ideas en productos significativos y útiles.
                             </p>
                             <div className="col-sm-12 d-flex justify-content-center">
-                                <a class="btn btn-primary mt-2" href={CV} download="Aris_Osorio_CV.pdf" role="button">
+                                <a className="btn btn-primary mt-2" href={CV} download="Aris_Osorio_CV.pdf" role="button">
                                     Descargar CV
                                 </a>
                             </div>

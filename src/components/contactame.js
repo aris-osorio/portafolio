@@ -1,28 +1,55 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+import emailjs from 'emailjs-com';
 
 export default function Contactame() {
+
+    let nombre = ""
+    let correo = ""
+    let mensaje = ""
+
+    const resetear = () => {
+        document.getElementById("inputName").value = "";
+        document.getElementById("inputEmail").value = "";
+        document.getElementById("inputMensaje").value = "";
+    }
+
+    const enviarCorreo = () => {
+        emailjs.send("service_lz2gfwh","template_s93zrwn",
+            {
+                nombre_cliente: nombre.value,
+                mensaje_cliente: mensaje.value,
+                correo_cliente: correo.value
+            },"user_1QPMAW15vauwZvzOWeVXo"
+            ).then(res => {
+                console.log('Email successfully sent!')
+                resetear();
+              }
+            ).catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err));
+    }
+
     return (
         <section id="contactame">
             <div className="bg-black">
-                <div className="vh-100 p-5">
+                <div className="container vh-100 pt-5">
                     <div className="col-12 d-flex justify-content-center p-3">
-                        <h1>Contactame</h1>
+                        <h1 className="subtitle julius yellow">Contactame</h1>
                     </div>
                     <div className="row d-flex m-0">
                         <div className="col-sm-6 mb-3">
-                            <label for="inputName">Tu nombre</label>
-                            <input id="inputName" className="form-control form-control-lg" type="text" placeholder="Ingresa tu nombre aqui" />
+                            <label htmlFor="inputName">Tu nombre</label>
+                            <input id="inputName" className="form-control form-control-lg input rounded-0 border-top-0 border-left-0 border-right-0" type="text" ref={txt => nombre = txt} placeholder="Ingresa tu nombre aqui" />
                         </div>
                         <div className="col-sm-6 mb-3">
-                            <label for="inputEmail">Tu correo</label>
-                            <input type="email" className="form-control form-control-lg" id="inputEmail" placeholder="name@example.com" />
+                            <label htmlFor="inputEmail">Tu correo</label>
+                            <input type="email" className="form-control form-control-lg input rounded-0 border-top-0 border-left-0 border-right-0" ref={txt => correo = txt} id="inputEmail" placeholder="name@example.com" />
                         </div>
                     </div>
                     <div className="p-3">
-                        <label for="inputMensaje">Tu mensaje</label>
-                        <textarea className="form-control  mb-3" id="inputMensaje" rows="3" />
-                        <button type="button" className="btn btn-primary">Enviar</button>
+                        <label htmlFor="inputMensaje">Tu mensaje</label>
+                        <textarea className="form-control form-control-lg mb-3 input rounded-0 border-top-0 border-left-0 border-right-0" ref={txt => mensaje = txt} id="inputMensaje" placeholder="Ingresa tu mensaje aqui" rows="3" />
+                        <button type="button" className="btn btn-primary rounded-pill pl-5 pr-5" onClick={enviarCorreo}>Enviar <FontAwesomeIcon icon={faLongArrowAltRight} className="ml-2" /></button>
                     </div>
                     <div className="col-12 d-flex justify-content-center p-2">
                         <div className="p-4">
