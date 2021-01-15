@@ -1,5 +1,6 @@
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 
 
 /*helpers*/
@@ -7,13 +8,13 @@
 {
     background-size: cover;
 }
-.julius
-{
-    font-family: 'Julius Sans One', sans-serif; 
-}
 .yellow
 {
     color: yellow!important;
+}
+.white
+{
+    color: white!important;
 }
 .bg-black
 {
@@ -23,7 +24,7 @@
 /*App*/
 *
 {
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*NavBar*/
@@ -34,7 +35,6 @@
 
 .nav-item > a 
 {
-    font-family: 'Julius Sans One', sans-serif; 
     color: white!important;
 }
 
@@ -65,7 +65,6 @@
 }
 span
 {
-    font-family: 'Julius Sans One', sans-serif!important; 
     color: yellow;
 }
 .cuadrito
@@ -74,18 +73,46 @@ span
     height: 10px;
     background: pink;
 }
+/*perfil*/
+.btn
+{
+    border-color: yellow!important;
+}
+.perfil
+{
+    background-image:url("./media/perfil2.png");
+    background-size: contain;
+    width: 360px; 
+    height: 408.75px;
+}
+.perfil:hover
+{
+    background-image:url("./media/perfil1.png");
+}
+.btn:hover
+{
+    background-color: yellow!important;
+    color: #000000!important;
+    transition-property: background-color!important;
+    transition-duration: 0.5s!important;
+    transition-timing-function: ease-in-out!important;
+}
 
 /*contactame*/
 input, textarea
 {
     background-color: transparent!important;
 }
-
 input:focus, input.form-control:focus, textarea:focus, textarea.form-control:focus
 {
+    border-color:yellow!important;
     outline:none !important;
     outline-width: 0 !important;
     box-shadow: none;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 /*------------------------Responsive Design--------------------*/

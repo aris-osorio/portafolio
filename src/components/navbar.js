@@ -18,7 +18,7 @@ export default function NavBar() {
                     </li>
                     <li className="nav-item">
                         <Link activeClass="active" to="acerca" spy={true} smooth={true} duration={500}>
-                            Acerca de
+                            Perfil
                         </Link>
                     </li>
                     <li className="nav-item">

@@ -34,22 +34,22 @@ export default function Contactame() {
             <div className="bg-black">
                 <div className="container vh-100 pt-5">
                     <div className="col-12 d-flex justify-content-center p-3">
-                        <h1 className="subtitle julius yellow">Contactame</h1>
+                        <h1 className="subtitle yellow">Contactame</h1>
                     </div>
                     <div className="row d-flex m-0">
                         <div className="col-sm-6 mb-3">
-                            <label htmlFor="inputName">Tu nombre</label>
+                            <label htmlFor="inputName" className="yellow">Tu nombre</label>
                             <input id="inputName" className="form-control form-control-lg input rounded-0 border-top-0 border-left-0 border-right-0" type="text" ref={txt => nombre = txt} placeholder="Ingresa tu nombre aqui" />
                         </div>
                         <div className="col-sm-6 mb-3">
-                            <label htmlFor="inputEmail">Tu correo</label>
+                            <label htmlFor="inputEmail" className="yellow">Tu correo</label>
                             <input type="email" className="form-control form-control-lg input rounded-0 border-top-0 border-left-0 border-right-0" ref={txt => correo = txt} id="inputEmail" placeholder="name@example.com" />
                         </div>
                     </div>
                     <div className="p-3">
-                        <label htmlFor="inputMensaje">Tu mensaje</label>
+                        <label htmlFor="inputMensaje" className="yellow">Tu mensaje</label>
                         <textarea className="form-control form-control-lg mb-3 input rounded-0 border-top-0 border-left-0 border-right-0" ref={txt => mensaje = txt} id="inputMensaje" placeholder="Ingresa tu mensaje aqui" rows="3" />
-                        <button type="button" className="btn btn-primary rounded-pill pl-5 pr-5" onClick={enviarCorreo}>Enviar <FontAwesomeIcon icon={faLongArrowAltRight} className="ml-2" /></button>
+                        <button type="button" className="btn btn-outline-warning btn-lg yellow" onClick={enviarCorreo}>Enviar <FontAwesomeIcon icon={faLongArrowAltRight} className="ml-2" /></button>
                     </div>
                     <div className="col-12 d-flex justify-content-center p-2">
                         <div className="p-4">
