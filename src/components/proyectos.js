@@ -6,7 +6,7 @@ export default function Proyectos() {
                     <div className="col-12 d-flex justify-content-center p-3">
                         <h1 className="subtitle julius yellow">Proyectos</h1>
                     </div>
-                    <div className="row d-flex">
+                    <div className="row d-flex d-flex justify-content-between">
                         <div className="col-sm-4">
                             <div class="card" style={{ width: "18rem" }}>
                                 <img class="card-img-top" src="..." alt="Card image cap" />
