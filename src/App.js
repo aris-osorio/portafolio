@@ -8,6 +8,7 @@ import Contactame from './components/contactame'
 
 export default function App() {
 
+  document.title = 'Aris Osorio';
   return (
     <div>
       <NavBar />

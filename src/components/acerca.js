@@ -1,6 +1,6 @@
 import CV from '../documents/ArisOsorio.pdf'
-import Perfil from '../media/perfil2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5, faCss3Alt, faJs, faPython, faGitAlt, faBootstrap, faReact } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -19,7 +19,7 @@ export default function Acerca() {
                         </div>
                         <div className="col-sm-6 justify-content-center align-items-center">
                             <div className="d-flex justify-content-center">
-                                <h2 className="yellow">¿Quien soy?</h2>
+                                <h3 className="yellow">¿Quien soy?</h3>
                             </div>
                             <div>
                                 <p className="mt-2 white text-justify">
@@ -53,7 +53,8 @@ export default function Acerca() {
                             </div>
                             <div className="col-sm-12 d-flex justify-content-center">
                                 <a className="btn btn-outline-warning btn-lg yellow" href={CV} download="Aris_Osorio_CV.pdf" role="button">
-                                    Descargar CV
+                                    <FontAwesomeIcon icon={faFileDownload}/>
+                                    &nbsp;Descargar cv
                                 </a>
                             </div>
                         </div>

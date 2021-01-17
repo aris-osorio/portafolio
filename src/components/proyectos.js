@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 export default function Proyectos() {
     return (
         <section id="proyectos">
@@ -6,34 +10,57 @@ export default function Proyectos() {
                     <div className="col-12 d-flex justify-content-center p-3">
                         <h1 className="subtitle julius yellow">Proyectos</h1>
                     </div>
-                    <div className="row d-flex d-flex justify-content-between">
-                        <div className="col-sm-4">
-                            <div class="card" style={{ width: "18rem" }}>
-                                <img class="card-img-top" src="..." alt="Card image cap" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div className="row">
+                        <div className="col-sm-6 justify-content-center align-items-center">
+                            <div>
+
+                            </div>
+                            <div>
+                                <div className="d-flex justify-content-center">
+                                    <h3 className="yellow">Simple Tasks</h3>
+                                </div>
+                                <div>
+                                    <p className="mt-2 white text-justify">
+                                        Aplicación web con un diseño ligero en la cual los usuarios
+                                        pueden desde gestionar sus tareas (crear, borrar, y eliminar) hasta
+                                        organizar y filtrar estas mismas ya sea por periodo de tiempo o su
+                                        contenido. Para la creación de esta aplicación se utilizaron las
+                                        tecnologias html, css, boostrap y javascript (react).
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-12 d-flex justify-content-center p-2">
+                                <div className="p-4">
+                                    <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-4x" />
+                                </div>
+                                <div className="p-4">
+                                    <FontAwesomeIcon icon={faGithub} className="fa-4x" />
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-4">
-                            <div class="card" style={{ width: "18rem" }}>
-                                <img class="card-img-top" src="..." alt="Card image cap" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
+                        <div className="col-sm-6 justify-content-center align-items-center">
+                            <div>
+
                             </div>
-                        </div>
-                        <div className="col-sm-4">
-                            <div class="card" style={{ width: "18rem" }}>
-                                <img class="card-img-top" src="..." alt="Card image cap" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div>
+                                <div className="d-flex justify-content-center">
+                                    <h3 className="yellow">Meme Chat</h3>
+                                </div>
+                                <div>
+                                    <p className="mt-2 white text-justify">
+                                        Chat-bot donde puedes interactuar con la llama "ola ke ase?"
+                                        programada con algunas frases mas usadas en los memes .para la
+                                        creación de esta aplicación se utilizaron las tecnologías html, css,
+                                        boostrap y javascript (react).
+                                    </p>
+                                </div>
+                                <div className="col-12 d-flex justify-content-center p-2">
+                                    <div className="p-4">
+                                        <FontAwesomeIcon icon={faExternalLinkAlt} className="fa-4x" />
+                                    </div>
+                                    <div className="p-4">
+                                        <FontAwesomeIcon icon={faGithub} className="fa-4x" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
