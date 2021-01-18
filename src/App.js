@@ -13,13 +13,11 @@ export default function App() {
   });
 
   let html = document.getElementsByTagName('html')[0];
-  console.log(html);
+  let navBar = document.getElementsByClassName('navbar');
   let elementoAparece = document.getElementsByClassName('aparece');
-  console.log(elementoAparece);
   
   window.addEventListener('scroll', (event) => {
     let topVent = html.scrollTop;
-    console.log(topVent);
     for(let i = 0; i < elementoAparece.length; i++){
       let topelemAparece = elementoAparece[i].offsetTop;
       if(topVent > topelemAparece - 400){
@@ -30,6 +28,14 @@ export default function App() {
             elementoAparece[j].style.opacity = 0;
           }
         }
+      }
+      if(topVent === 0)
+      {
+        navBar[0].classList.remove("obscuro")
+      }
+      else
+      {
+        navBar[0].classList.add("obscuro")
       }
     }
   });

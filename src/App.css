@@ -78,7 +78,11 @@ body::-webkit-scrollbar-thumb
     color:yellow!important;
     border-bottom: 1px solid  yellow!important;
 }
-
+.obscuro
+{
+    background-color: rgb(20, 18, 18);
+    transition: all 0.5s;
+}
 /*inicio*/
 .mandril
 {
@@ -114,15 +118,11 @@ span
 }
 .perfil
 {
-    background-image:url("./media/perfil2.png");
+    background-image:url("./media/perfil1.png");
     background-size: contain;
     width: 360px; 
     height: 408.75px;
-}
-.perfil:hover
-{
-    background-image:url("./media/perfil1.png");
-}
+}  
 .btn:hover
 {
     background-color: yellow!important;
