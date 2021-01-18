@@ -11,7 +11,6 @@ export default function Inicio() {
                         <h2 className="subtitle julius text-center">Desarrollador&nbsp;
                             <Typed strings={['Web','React','Django','Fullstack']} typeSpeed={40} backSpeed={50} startDelay={2000} backDelay ={1000}/>
                         </h2>
-                        <div className="cuadrito"></div>
                     </div>
                 </div>
             </div>
