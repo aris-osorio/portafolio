@@ -9,12 +9,12 @@ export default function Acerca() {
     return (
         <section id="acerca">
             <div className="bg-black">
-                <div className="vh-100 pt-5 container">
+                <div className="pt-5 pb-5 container">
                     <div className="col-12 d-flex justify-content-center p-3">
                         <h1 className="subtitle yellow">Perfil</h1>
                     </div>
-                    <div className="row d-flex">
-                        <div className="col-sm-6  d-flex justify-content-center align-items-center">
+                    <div className="row d-flex aparece">
+                        <div className="col-sm-6 pb-3 d-flex justify-content-center align-items-center">
                             <div className="perfil" />
                         </div>
                         <div className="col-sm-6 justify-content-center align-items-center">
@@ -34,14 +34,14 @@ export default function Acerca() {
                                 </p>
                             </div>
                             <div>
-                                <div className="row d-flex justify-content-between">
+                                <div className="row d-flex justify-content-between iconos">
                                     <div className="col-sm-6 d-flex justify-content-between pb-3">
                                         <FontAwesomeIcon icon={faHtml5} className="fa-4x" />
                                         <FontAwesomeIcon icon={faCss3Alt} className="fa-4x" />
                                         <FontAwesomeIcon icon={faJs} className="fa-4x" />
                                         <FontAwesomeIcon icon={faPython} className="fa-4x" />
                                     </div>
-                                    <div className="col-sm-6 d-flex justify-content-between p-0">
+                                    <div className="col-sm-6 d-flex justify-content-between pb-3">
                                         <FontAwesomeIcon icon={faBootstrap} className="fa-4x" />
                                         <FontAwesomeIcon icon={faReact} className="fa-4x" />
                                         <svg fill="currentColor" height="64" width="64" xmlns="http://www.w3.org/2000/svg">

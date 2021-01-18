@@ -4,6 +4,11 @@
 
 
 /*helpers*/
+.aparece
+{
+    opacity: 0;
+    transition: all 0.5s;
+}
 .cover
 {
     background-size: cover;
@@ -36,6 +41,21 @@ body::-webkit-scrollbar-thumb
     border-radius: 5px;
     background: yellow;
 }
+
+.icon:hover
+{
+    cursor: pointer;
+    color: yellow;
+    transition-property: color!important;
+    transition-duration: 0.5s!important;
+    transition-timing-function: ease-in-out!important;
+}
+
+.icon:active
+{
+    font-size: 3.8em;
+}
+
 /*NavBar*/
 .navbar
 {
@@ -63,6 +83,11 @@ body::-webkit-scrollbar-thumb
 .mandril
 {
     background-image: url("./media/mandril.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .title
 {
@@ -127,25 +152,68 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
 /*------------------------Responsive Design--------------------*/
 @media screen and (max-width: 576px)
 {   
-    .cuadrito
+    .container
     {
-        background: white;
+        padding: 25px!important;
     }
+    .mandril
+    {
+        background-image: url("./media/mandril1.jpg");
+    }
+    .col-8
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .title
+    {
+        font-size: 88px; 
+    }
+    .fondo
+    {
+        background: rgba(0,0,0,0.8);
+    }
+
 }
 @media screen and (min-width: 575px) and (max-width: 823px)
 {  
+    .container
+    {
+        padding: 25px!important;
+    }
+    .mandril
+    {
+        background-image: url("./media/mandril3.jpg");
+    }
+    .col-8
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .title
+    {
+        font-size: 88px; 
+    }
+    .fondo
+    {
+        background: rgba(0,0,0,0.8);
+    }
+    .col-sm-6
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .iconos > .col-sm-6
+    {
+        flex: 0 0 50%!important;
+        max-width: 50%!important;
+        padding: 0 px 0px;
+    }
     .cuadrito
     {
         background: red;
     }
-    .title
-    {
-        font-size: 70px; 
-    }
-    .subtitle
-    {
-        font-size: 25px; 
-    }
+    
 }
 @media screen and (min-width: 824px) and (max-width: 1077px) 
 {
@@ -164,11 +232,16 @@ input:focus, input.form-control:focus, textarea:focus, textarea.form-control:foc
     }
     .title
     {
-        font-size: 80px; 
+        font-size: 88px;  
     }
-    .subtitle
+    .perfil
     {
-        font-size: 25px; 
+        background-repeat: no-repeat;
+    }
+    .iconos > .col-sm-6
+    {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
     }
 }
 @media screen and (min-width: 1078px) and (max-width: 1199.98px) 
