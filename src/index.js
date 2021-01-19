@@ -3,7 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+<<<<<<< HEAD
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
+=======
+>>>>>>> 5f08165 (Initialize project using Create React App)
+=======
+import 'bootstrap/dist/css/bootstrap.min.css';
+>>>>>>> 186a602 (react project 'portafiolio' created)
 
 ReactDOM.render(
   <React.StrictMode>

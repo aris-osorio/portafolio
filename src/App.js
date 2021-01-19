@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 import './App.css';
 import React, { useEffect } from 'react'
 import NavBar from './components/navbar'
@@ -51,3 +53,25 @@ export default function App() {
     </div>
   );
 }
+=======
+import logo from './logo.svg';
+=======
+>>>>>>> 186a602 (react project 'portafiolio' created)
+import './App.css';
+import Intro from './components/intro';
+
+export default function App() {
+
+  
+  return (
+    <div>
+      <Intro/>
+    </div>
+  )
+}
+<<<<<<< HEAD
+
+export default App;
+>>>>>>> 5f08165 (Initialize project using Create React App)
+=======
+>>>>>>> 186a602 (react project 'portafiolio' created)
